@@ -1,5 +1,5 @@
 apiVersion: v2
-name: helm-nginx
+name: nginx
 description: Um Helm Chart simples para testar no Argo CD
 version: 0.1.0
 appVersion: "1.0"

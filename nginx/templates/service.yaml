@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "helm-nginx.fullname" . }}
+  name: {{ include "nginx.fullname" . }}
 spec:
   type: {{ .Values.service.type }}
   selector:
-    app: {{ include "helm-nginx.name" . }}
+    app: {{ include "nginx.name" . }}
   ports:
     - protocol: TCP
       port: {{ .Values.service.port }}
